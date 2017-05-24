@@ -5,11 +5,11 @@ from xml.etree import ElementTree
 import pump_setup
 import threading
 
-
-library = ElementTree.parse('recipes')
+AppLocation = '/data/Drink_Machine/'
+library = ElementTree.parse(AppLocation + 'recipes')
 my_recipes = library.findall('drinks/drink')
 possible_drinks = my_recipes
-pumpset = ElementTree.parse('pump_settings')
+pumpset = ElementTree.parse(AppLocation + 'pump_settings')
 pumps = pumpset.findall('pumps/pump')
 
 
@@ -20,7 +20,7 @@ class MainWindow(QtWidgets.QMainWindow, mainmenu.Ui_MainMenu):
         self.setWindowState(QtCore.Qt.WindowMaximized)
 
         self.background = QtGui.QPalette()
-        self.background.setBrush(QtGui.QPalette.Background, QtGui.QBrush(QtGui.QPixmap('images/MainScreen.jpg')))
+        self.background.setBrush(QtGui.QPalette.Background, QtGui.QBrush(QtGui.QPixmap(AppLocation + 'images/MainScreen.jpg')))
         self.setPalette(self.background)
 
         self.btn_drink.clicked.connect(self.drink_set)
@@ -72,7 +72,7 @@ class DrinksList(QtWidgets.QWidget, drink_list.Ui_DrinkList):
                     ingredients.append('-' + booze.get('name'))
                 ingredients = '\n'.join(ingredients)
                 self.lbl_ingredients.setText('\n\nIngredients:\n' + ingredients)
-                self.image_path = 'images/' + d.find('image').text
+                self.image_path = AppLocation + 'images/' + d.find('image').text
                 self.lbl_image.setPixmap(QtGui.QPixmap(self.image_path))
 
     def pour_selected(self):
