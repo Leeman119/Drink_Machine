@@ -1,0 +1,148 @@
+<root>
+<drinks>
+    <drink>
+        <name>Martini</name>
+        <instruction>Add orange bitters, and stir with ice.</instruction>
+        <garnish>Olives or Lemon Twist</garnish>
+        <ingredients>
+            <booze name = "Gin"> 1.5 </booze>
+            <booze name = "Dry Vermouth"> 0.75 </booze>
+        </ingredients>
+        <image>martini.jpg</image>
+    </drink>
+
+    <drink>
+        <name>Whiskey Sour</name>
+        <instruction>Shake with ice.</instruction>
+        <garnish>Cherry</garnish>
+        <ingredients>
+            <booze name = "Bourbon"> 1.5 </booze>
+            <booze name = "Lemon Juice"> 0.5 </booze>
+            <booze name = "Simple Syrup"> 0.5 </booze>
+        </ingredients>
+        <image>whiskeysour.jpg</image>
+    </drink>
+
+    <drink>
+        <name>Long Island Iced Tea</name>
+        <instruction>Add simple syrup. Shake with ice and pour into collins glass. Add cola and stir mildly.</instruction>
+        <garnish>None</garnish>
+        <ingredients>
+            <booze name = "Gin"> 0.5 </booze>
+            <booze name = "Tequila"> 0.5 </booze>
+            <booze name = "Vodka"> 0.5 </booze>
+            <booze name = "Rum"> 0.5 </booze>
+            <booze name = "Triple Sec"> 0.5 </booze>
+            <booze name = "Lemon Juice"> 0.5 </booze>
+            <booze name = "Simple Syrup"> 0.5 </booze>
+            <booze name = "Cola"> 4.0 </booze>
+        </ingredients>
+        <image>longislandicedtea.jpg</image>
+    </drink>
+
+    <drink>
+        <name>Cosmopolitan</name>
+        <instruction>Shake with ice.</instruction>
+        <garnish>Lime Wedge</garnish>
+        <ingredients>
+            <booze name = "Vodka"> 1.5 </booze>
+            <booze name = "Lemon Juice"> 0.25 </booze>
+            <booze name = "Triple Sec"> 0.75 </booze>
+            <booze name = "Cranberry Juice"> 0.75 </booze>
+        </ingredients>
+        <image>cosmopolitan.jpg</image>
+    </drink>
+
+    <drink>
+        <name>Waikiki Beachcomber</name>
+        <instruction>Shake with ice.</instruction>
+        <garnish>Quatered pineapple slice.</garnish>
+        <ingredients>
+            <booze name = "Gin"> 0.75 </booze>
+            <booze name = "Pineapple Juice"> 0.1 </booze>
+            <booze name = "Triple Sec"> 0.75 </booze>
+        </ingredients>
+        <image>waikikibeachcomber.jpg</image>
+    </drink>
+
+    <drink>
+        <name>Sex On The Beach</name>
+        <instruction>Fill highball glass with ice and stir gently.</instruction>
+        <garnish>Orange Wedge</garnish>
+        <ingredients>
+            <booze name = "Vodka"> 1.33 </booze>
+            <booze name = "Peach Schnapps"> 0.66 </booze>
+            <booze name = "Orange Juice"> 1.33 </booze>
+            <booze name = "Cranberry Juice"> 1.33 </booze>
+        </ingredients>
+        <image>sexonthebeach.jpg</image>
+    </drink>
+
+    <drink>
+        <name>Long Beach Iced Tea</name>
+        <instruction>Shake with ice.</instruction>
+        <garnish>Cherry</garnish>
+        <ingredients>
+            <booze name = "Lemon Juice"> 1.0 </booze>
+            <booze name = "Simple Syrup"> 1.0 </booze>
+            <booze name = "Gin"> 0.5 </booze>
+            <booze name = "Tequila"> 0.5 </booze>
+            <booze name = "Vodka"> 0.5 </booze>
+            <booze name = "Rum"> 0.5 </booze>
+            <booze name = "Triple Sec"> 0.5 </booze>
+            <booze name = "Cranberry Juice"> 0.33 </booze>
+        </ingredients>
+        <image>longbeachicedtea.jpg</image>
+    </drink>
+
+    <drink>
+        <name>Vodka Martini</name>
+        <instruction>Stir with ice.</instruction>
+        <garnish>Olives or Lemon Twist</garnish>
+        <ingredients>
+            <booze name = "Vodka"> 2.0 </booze>
+            <booze name = "Dry Vermouth"> 0.75 </booze>
+            <booze name = "Lemon Juice"> 0.02 </booze>
+        </ingredients>
+        <image>vodkamartini.jpg</image>
+    </drink>
+
+    <drink>
+        <name>Ambassador</name>
+        <instruction> Add a splash of simple syrup.Stir with ice.</instruction>
+        <garnish>None</garnish>
+        <ingredients>
+            <booze name = "Tequila"> 1.0 </booze>
+            <booze name = "Orange Juice"> 1.50 </booze>
+            <booze name = "Simple Syrup"> 0.02 </booze>
+        </ingredients>
+        <image>ambassador.jpg</image>
+    </drink>
+
+    <drink>
+        <name>Brass Monkey</name>
+        <instruction>Stir with ice.</instruction>
+        <garnish>Cherry</garnish>
+        <ingredients>
+            <booze name = "Vodka"> 1.0 </booze>
+            <booze name = "Rum"> 1.0 </booze>
+            <booze name = "Orange Juice"> 2.0 </booze>
+        </ingredients>
+        <image>brassmonkey.jpg</image>
+    </drink>
+
+    <drink>
+        <name>El Dolrado</name>
+        <instruction>Premix 1tsp of honey with 1tsp of warm water. Shake with ice.</instruction>
+        <garnish>None</garnish>
+        <ingredients>
+            <booze name = "Tequila"> 1.5 </booze>
+            <booze name = "Lemon Juice"> 1.0 </booze>
+            <booze name = "Honey Syrup"> 0.05 </booze>
+        </ingredients>
+        <image>eldolrado.jpg</image>
+    </drink>
+
+
+</drinks>
+</root>

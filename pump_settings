@@ -1,0 +1,159 @@
+<root>
+    <pumps>
+        <pump>
+            <number>1</number>
+            <liquor>Lemon Juice</liquor>
+            <flavor>Organic</flavor>
+            <brand>Santa Cruz</brand>
+            <bottle>16.0</bottle>
+            <ozleft>16.0</ozleft>
+            <oznotify>3.0</oznotify>
+            <oneoz_timing>28.0</oneoz_timing>
+            <reverse>True</reverse>
+            <speed>255</speed>
+        </pump>
+
+        <pump>
+            <number>2</number>
+            <liquor>Dry Vermouth</liquor>
+            <flavor>Extra Dry</flavor>
+            <brand>Martini &amp; Rossi</brand>
+            <bottle>25.0</bottle>
+            <ozleft>23.0</ozleft>
+            <oznotify>5.0</oznotify>
+            <oneoz_timing>28.0</oneoz_timing>
+            <reverse>True</reverse>
+            <speed>255</speed>
+        </pump>
+
+        <pump>
+            <number>3</number>
+            <liquor>Triple Sec</liquor>
+            <flavor>Orange Liqueur</flavor>
+            <brand>Hiram Walker</brand>
+            <bottle>25.0</bottle>
+            <ozleft>18.0</ozleft>
+            <oznotify>5.0</oznotify>
+            <oneoz_timing>28.0</oneoz_timing>
+            <reverse>True</reverse>
+            <speed>255</speed>
+        </pump>
+
+        <pump>
+            <number>4</number>
+            <liquor>Orange Juice</liquor>
+            <flavor>No Pulp</flavor>
+            <brand>Tropicana</brand>
+            <bottle>50.0</bottle>
+            <ozleft>50.0</ozleft>
+            <oznotify>5.0</oznotify>
+            <oneoz_timing>28.0</oneoz_timing>
+            <reverse>False</reverse>
+            <speed>255</speed>
+        </pump>
+
+        <pump>
+            <number>5</number>
+            <liquor>Peach Schnapps</liquor>
+            <flavor>None</flavor>
+            <brand>J. Brandt</brand>
+            <bottle>50.0</bottle>
+            <ozleft>50.0</ozleft>
+            <oznotify>5.0</oznotify>
+            <oneoz_timing>28.0</oneoz_timing>
+            <reverse>True</reverse>
+            <speed>255</speed>
+        </pump>
+
+        <pump>
+            <number>6</number>
+            <liquor>Whiskey</liquor>
+            <flavor>Irish</flavor>
+            <brand>Jameson</brand>
+            <bottle>50.0</bottle>
+            <ozleft>50.0</ozleft>
+            <oznotify>5.0</oznotify>
+            <oneoz_timing>28.0</oneoz_timing>
+            <reverse>True</reverse>
+            <speed>255</speed>
+        </pump>
+
+        <pump>
+            <number>7</number>
+            <liquor>Gin</liquor>
+            <flavor>None</flavor>
+            <brand>Hendrick's</brand>
+            <bottle>90.0</bottle>
+            <ozleft>50.25</ozleft>
+            <oznotify>5.0</oznotify>
+            <oneoz_timing>28.0</oneoz_timing>
+            <reverse>False</reverse>
+            <speed>255</speed>
+        </pump>
+
+        <pump>
+            <number>8</number>
+            <liquor>Bourbon</liquor>
+            <flavor>Kentucky Straight</flavor>
+            <brand>Jim Bean</brand>
+            <bottle>59.0</bottle>
+            <ozleft>59.0</ozleft>
+            <oznotify>5.0</oznotify>
+            <oneoz_timing>28.0</oneoz_timing>
+            <reverse>True</reverse>
+            <speed>255</speed>
+        </pump>
+
+        <pump>
+            <number>9</number>
+            <liquor>Vodka</liquor>
+            <flavor>None</flavor>
+            <brand>Skyy</brand>
+            <bottle>59.0</bottle>
+            <ozleft>59.0</ozleft>
+            <oznotify>5.0</oznotify>
+            <oneoz_timing>28.0</oneoz_timing>
+            <reverse>True</reverse>
+            <speed>255</speed>
+        </pump>
+
+        <pump>
+            <number>10</number>
+            <liquor>Cranberry Juice</liquor>
+            <flavor>From Concentrate</flavor>
+            <brand>Signature</brand>
+            <bottle>96.0</bottle>
+            <ozleft>96.0</ozleft>
+            <oznotify>10.0</oznotify>
+            <oneoz_timing>28.0</oneoz_timing>
+            <reverse>False</reverse>
+            <speed>255</speed>
+        </pump>
+
+        <pump>
+            <number>11</number>
+            <liquor>Rum</liquor>
+            <flavor>White</flavor>
+            <brand>Bacardi</brand>
+            <bottle>90.0</bottle>
+            <ozleft>50.25</ozleft>
+            <oznotify>5.0</oznotify>
+            <oneoz_timing>28.0</oneoz_timing>
+            <reverse>True</reverse>
+            <speed>255</speed>
+        </pump>
+
+        <pump>
+            <number>12</number>
+            <liquor>Tequila</liquor>
+            <flavor>Gold</flavor>
+            <brand>Jose Cuervo</brand>
+            <bottle>90.0</bottle>
+            <ozleft>50.25</ozleft>
+            <oznotify>5.0</oznotify>
+            <oneoz_timing>28.0</oneoz_timing>
+            <reverse>False</reverse>
+            <speed>255</speed>
+        </pump>
+    </pumps>
+</root>
