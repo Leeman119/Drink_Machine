@@ -6,6 +6,8 @@ import pump_setup
 import threading
 
 AppLocation = '/data/Drink_Machine/'
+font_color = 'color: white'
+
 library = ElementTree.parse(AppLocation + 'recipes')
 my_recipes = library.findall('drinks/drink')
 possible_drinks = my_recipes
@@ -50,9 +52,9 @@ class DrinksList(QtWidgets.QWidget, drink_list.Ui_DrinkList):
         self.image_path = ''
 
         self.setPalette(Main_Window.background)
-        self.lbl_ingredients.setStyleSheet('color: white')
-        self.lbl_instructions.setStyleSheet('color: white')
-        self.box_drinklbl.setStyleSheet('color: white')
+        self.lbl_ingredients.setStyleSheet(font_color)
+        self.lbl_instructions.setStyleSheet(font_color)
+        self.box_drinklbl.setStyleSheet(font_color)
 
         for i in possible_drinks:
             self.drink_menu.addItem(i.find('name').text)
@@ -96,7 +98,16 @@ class PrepWindow(QtWidgets.QWidget, pouring.Ui_PourWindow):
         self.setupUi(self)
         self.setWindowState(QtCore.Qt.WindowMaximized)
 
+        # self.setStyleSheet('#groupBox {' + font_color + ';}')
+        # self.groupBox.setStyleSheet('QGroupBox {' + font_color + ';}')
+        # self.groupBox_2.setStyleSheet('QGroupBox {' + font_color + ';}')
+        
         self.setPalette(Main_Window.background)
+        self.dsp_name.setStyleSheet(font_color)
+        self.dsp_instructions.setStyleSheet(font_color)
+        self.dsp_ingredients.setStyleSheet(font_color)
+        self.label_3.setStyleSheet(font_color)
+
 
         self.drink = ''
         self.instruction = ''
