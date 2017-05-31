@@ -49,7 +49,7 @@ class DrinksList(QtWidgets.QWidget, drink_list.Ui_DrinkList):
         self.setWindowState(QtCore.Qt.WindowMaximized)
         self.image_path = ''
 
-        # self.setPalette(Main_Window.background)
+        self.setPalette(Main_Window.background)
 
         for i in possible_drinks:
             self.drink_menu.addItem(i.find('name').text)
@@ -93,7 +93,7 @@ class PrepWindow(QtWidgets.QWidget, pouring.Ui_PourWindow):
         self.setupUi(self)
         self.setWindowState(QtCore.Qt.WindowMaximized)
 
-        # self.setPalette(Main_Window.background)
+        self.setPalette(Main_Window.background)
 
         self.drink = ''
         self.instruction = ''
