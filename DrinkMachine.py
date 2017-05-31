@@ -50,6 +50,9 @@ class DrinksList(QtWidgets.QWidget, drink_list.Ui_DrinkList):
         self.image_path = ''
 
         self.setPalette(Main_Window.background)
+        self.lbl_ingredients.setStyleSheet('color: white')
+        self.lbl_instructions.setStyleSheet('color: white')
+        self.box_drinklbl.setStyleSheet('color: white')
 
         for i in possible_drinks:
             self.drink_menu.addItem(i.find('name').text)
@@ -564,6 +567,7 @@ class ManualPour(QtWidgets.QWidget, manual_pour.Ui_ManualPour):
         super(ManualPour, self).__init__()
         self.setupUi(self)
         self.setWindowState(QtCore.Qt.WindowMaximized)
+        self.setPalette(Main_Window.background)
 
         self.btn_reset.clicked.connect(self.reset)
         self.btn_start.clicked.connect(self.toggle_pour)
