@@ -8,7 +8,7 @@
             <booze name = "Gin"> 1.5 </booze>
             <booze name = "Dry Vermouth"> 0.75 </booze>
         </ingredients>
-        <image>martini.jpg</image>
+        <image>martini.png</image>
     </drink>
 
     <drink>
@@ -20,7 +20,7 @@
             <booze name = "Lemon Juice"> 0.5 </booze>
             <booze name = "Simple Syrup"> 0.5 </booze>
         </ingredients>
-        <image>whiskeysour.jpg</image>
+        <image>whiskeysour.png</image>
     </drink>
 
     <drink>
@@ -37,7 +37,7 @@
             <booze name = "Simple Syrup"> 0.5 </booze>
             <booze name = "Cola"> 4.0 </booze>
         </ingredients>
-        <image>longislandicedtea.jpg</image>
+        <image>longislandicedtea.png</image>
     </drink>
 
     <drink>
@@ -50,7 +50,7 @@
             <booze name = "Triple Sec"> 0.75 </booze>
             <booze name = "Cranberry Juice"> 0.75 </booze>
         </ingredients>
-        <image>cosmopolitan.jpg</image>
+        <image>cosmopolitan.png</image>
     </drink>
 
     <drink>
@@ -62,7 +62,7 @@
             <booze name = "Pineapple Juice"> 0.1 </booze>
             <booze name = "Triple Sec"> 0.75 </booze>
         </ingredients>
-        <image>waikikibeachcomber.jpg</image>
+        <image>waikikibeachcomber.png</image>
     </drink>
 
     <drink>
@@ -75,7 +75,7 @@
             <booze name = "Orange Juice"> 1.33 </booze>
             <booze name = "Cranberry Juice"> 1.33 </booze>
         </ingredients>
-        <image>sexonthebeach.jpg</image>
+        <image>sexonthebeach.png</image>
     </drink>
 
     <drink>
@@ -92,7 +92,7 @@
             <booze name = "Triple Sec"> 0.5 </booze>
             <booze name = "Cranberry Juice"> 0.33 </booze>
         </ingredients>
-        <image>longbeachicedtea.jpg</image>
+        <image>longbeachicedtea.png</image>
     </drink>
 
     <drink>
@@ -104,7 +104,7 @@
             <booze name = "Dry Vermouth"> 0.75 </booze>
             <booze name = "Lemon Juice"> 0.02 </booze>
         </ingredients>
-        <image>vodkamartini.jpg</image>
+        <image>vodkamartini.png</image>
     </drink>
 
     <drink>
@@ -116,7 +116,7 @@
             <booze name = "Orange Juice"> 1.50 </booze>
             <booze name = "Simple Syrup"> 0.02 </booze>
         </ingredients>
-        <image>ambassador.jpg</image>
+        <image>ambassador.png</image>
     </drink>
 
     <drink>
@@ -128,7 +128,7 @@
             <booze name = "Rum"> 1.0 </booze>
             <booze name = "Orange Juice"> 2.0 </booze>
         </ingredients>
-        <image>brassmonkey.jpg</image>
+        <image>brassmonkey.png</image>
     </drink>
 
     <drink>
@@ -140,7 +140,7 @@
             <booze name = "Lemon Juice"> 1.0 </booze>
             <booze name = "Honey Syrup"> 0.05 </booze>
         </ingredients>
-        <image>eldolrado.jpg</image>
+        <image>eldolrado.png</image>
     </drink>
 
 

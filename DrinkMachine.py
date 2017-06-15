@@ -32,7 +32,7 @@ class MainWindow(QtWidgets.QMainWindow, mainmenu.Ui_MainMenu):
         self.btn_exit.clicked.connect(self.close)
 
     def drink_set(self):
-        drink_list.show()
+        drink_list.showFullScreen()
 
     def recipe_set(self):
         pass
@@ -41,7 +41,7 @@ class MainWindow(QtWidgets.QMainWindow, mainmenu.Ui_MainMenu):
         pass
 
     def pump_set(self):
-        Pumps.show()
+        Pumps.showFullScreen()
 
 
 class DrinksList(QtWidgets.QWidget, drink_list.Ui_DrinkList):
@@ -85,11 +85,12 @@ class DrinksList(QtWidgets.QWidget, drink_list.Ui_DrinkList):
         # drink_image_bkground = QtGui.QPalette()
         # drink_image_bkground.setBrush(QtGui.QPalette.Background, QtGui.QBrush(QtGui.QPixmap(self.image_path)))
         # Prep.setPalette(drink_image_bkground)
-        Prep.show()
+        Prep.showFullScreen()
 
     def manual_pour(self):
         Manual.populate()
-        Manual.show()
+        Manual.reset()
+        Manual.showFullScreen()
 
 
 class PrepWindow(QtWidgets.QWidget, pouring.Ui_PourWindow):
@@ -108,7 +109,6 @@ class PrepWindow(QtWidgets.QWidget, pouring.Ui_PourWindow):
         self.dsp_ingredients.setStyleSheet(font_color)
         self.label_3.setStyleSheet(font_color)
 
-
         self.drink = ''
         self.instruction = ''
         self.garnish = ''
@@ -117,11 +117,11 @@ class PrepWindow(QtWidgets.QWidget, pouring.Ui_PourWindow):
         self.abort = False
 
         self.btn_back.clicked.connect(self.hide)
-        self.doubleSpinBox.valueChanged.connect(self.update)
+        self.doubleSpinBox.valueChanged.connect(self.update_drink)
         self.btn_stop.clicked.connect(self.all_stop)
-        self.btn_pour.clicked.connect(self.serve_clicked)
+        self.btn_pour.clicked.connect(lambda: threading.Thread(target=self.serve).start())
 
-    def update(self):
+    def update_drink(self):
         self.multiplier = self.doubleSpinBox.value()
         self.dsp_name.setText(self.drink)
         self.dsp_instructions.setText(self.instruction + '\n\n-Optional garnishes:\n' + self.garnish)
@@ -130,6 +130,7 @@ class PrepWindow(QtWidgets.QWidget, pouring.Ui_PourWindow):
             ingredient_str += i[0] + ' - ' + str(float(i[1]) * self.multiplier) + 'oz\n'
         self.dsp_ingredients.setText(ingredient_str)
 
+    # Stop all pumps immediately
     def all_stop(self):
         self.abort = True
         Pumps.p1.stop()
@@ -145,9 +146,8 @@ class PrepWindow(QtWidgets.QWidget, pouring.Ui_PourWindow):
         Pumps.p11.stop()
         Pumps.p12.stop()
 
-    def serve_clicked(self):
-        threading.Thread(target=self.serve).start()
-
+    # Create up to, but not more than, 4 threads to pour liquors. (The limitation of 4 is based on the power supply
+    # only being able run a max of 5 pumps simultaneously. Allowing only 4 is safer.)
     def serve(self):
         missing = []
         for i in self.ingredients:
@@ -166,10 +166,12 @@ class PrepWindow(QtWidgets.QWidget, pouring.Ui_PourWindow):
             missing_window.label.setText('The following ingredients are not in the machine.\n'
                                          'Please add them to your drink according to the instructions.')
             missing_window.populate(missing, self.multiplier, self.instruction)
-        missing_window.show()
+        missing_window.showFullScreen()
 
         active_threads = threading.activeCount()
 
+        # At this point, the list self.ingredients should already be sorted so as to begin pouring the largest liquor
+        # portions first.
         for i in self.ingredients:
             if self.abort: break
             for p in Pumps.all_pumps:
@@ -192,17 +194,15 @@ class PrepWindow(QtWidgets.QWidget, pouring.Ui_PourWindow):
 
     def setup_pour(self, drink):
         for d in my_recipes:
-            if d.find('name').text != drink:
-                continue
-            else:
+            if d.find('name').text == drink:
                 self.drink = drink
                 self.instruction = d.find('instruction').text
                 self.garnish = d.find('garnish').text
                 self.ingredients = []
                 for booze in d.findall('ingredients/booze'):
                     self.ingredients.append([booze.get('name'), booze.text])
-                self.update()
-                self.show()
+                self.update_drink()
+                self.showFullScreen()
                 break
 
 
@@ -217,7 +217,7 @@ class MissingIngredients(QtWidgets.QWidget, miss_ingredients.Ui_MissingIngredien
 
     def stop(self):
         Prep.all_stop()
-        Prep.show()
+        Prep.showFullScreen()
         self.hide()
 
     def populate(self, ingredients, serving_size, instructions):
@@ -259,18 +259,18 @@ class PumpSetup(QtWidgets.QWidget, pump_set_ui.Ui_PumpSettings):
         self.all_pumps = [self.p1, self.p2, self.p3, self.p4, self.p5, self.p6,
                           self.p7, self.p8, self.p9, self.p10, self.p11, self.p12]
 
-        self.btn_pump1.clicked.connect(self.pump1_click)
-        self.btn_pump2.clicked.connect(self.pump2_click)
-        self.btn_pump3.clicked.connect(self.pump3_click)
-        self.btn_pump4.clicked.connect(self.pump4_click)
-        self.btn_pump5.clicked.connect(self.pump5_click)
-        self.btn_pump6.clicked.connect(self.pump6_click)
-        self.btn_pump7.clicked.connect(self.pump7_click)
-        self.btn_pump8.clicked.connect(self.pump8_click)
-        self.btn_pump9.clicked.connect(self.pump9_click)
-        self.btn_pump10.clicked.connect(self.pump10_click)
-        self.btn_pump11.clicked.connect(self.pump11_click)
-        self.btn_pump12.clicked.connect(self.pump12_click)
+        self.btn_pump1.clicked.connect(lambda: self.pumpbtn_change(self.btn_pump1, self.p1))
+        self.btn_pump2.clicked.connect(lambda: self.pumpbtn_change(self.btn_pump2, self.p2))
+        self.btn_pump3.clicked.connect(lambda: self.pumpbtn_change(self.btn_pump3, self.p3))
+        self.btn_pump4.clicked.connect(lambda: self.pumpbtn_change(self.btn_pump4, self.p4))
+        self.btn_pump5.clicked.connect(lambda: self.pumpbtn_change(self.btn_pump5, self.p5))
+        self.btn_pump6.clicked.connect(lambda: self.pumpbtn_change(self.btn_pump6, self.p6))
+        self.btn_pump7.clicked.connect(lambda: self.pumpbtn_change(self.btn_pump7, self.p7))
+        self.btn_pump8.clicked.connect(lambda: self.pumpbtn_change(self.btn_pump8, self.p8))
+        self.btn_pump9.clicked.connect(lambda: self.pumpbtn_change(self.btn_pump9, self.p9))
+        self.btn_pump10.clicked.connect(lambda: self.pumpbtn_change(self.btn_pump10, self.p10))
+        self.btn_pump11.clicked.connect(lambda: self.pumpbtn_change(self.btn_pump11, self.p11))
+        self.btn_pump12.clicked.connect(lambda: self.pumpbtn_change(self.btn_pump12, self.p12))
         self.btn_back.clicked.connect(self.hide)
         self.btn_save.clicked.connect(self.save_settings)
         self.btn_calibrate.clicked.connect(self.calibrate_click)
@@ -434,45 +434,8 @@ class PumpSetup(QtWidgets.QWidget, pump_set_ui.Ui_PumpSettings):
         self.p12.pump = pump_setup.hat3.getMotor(4)
 
     # Change the currently selected pump.
-    def pump1_click(self):
-        self.pumpbtn_change(self.btn_pump1)
-        self.show_curr_pump(self.p1)
-    def pump2_click(self):
-        self.pumpbtn_change(self.btn_pump2)
-        self.show_curr_pump(self.p2)
-    def pump3_click(self):
-        self.pumpbtn_change(self.btn_pump3)
-        self.show_curr_pump(self.p3)
-    def pump4_click(self):
-        self.pumpbtn_change(self.btn_pump4)
-        self.show_curr_pump(self.p4)
-    def pump5_click(self):
-        self.pumpbtn_change(self.btn_pump5)
-        self.show_curr_pump(self.p5)
-    def pump6_click(self):
-        self.pumpbtn_change(self.btn_pump6)
-        self.show_curr_pump(self.p6)
-    def pump7_click(self):
-        self.pumpbtn_change(self.btn_pump7)
-        self.show_curr_pump(self.p7)
-    def pump8_click(self):
-        self.pumpbtn_change(self.btn_pump8)
-        self.show_curr_pump(self.p8)
-    def pump9_click(self):
-        self.pumpbtn_change(self.btn_pump9)
-        self.show_curr_pump(self.p9)
-    def pump10_click(self):
-        self.pumpbtn_change(self.btn_pump10)
-        self.show_curr_pump(self.p10)
-    def pump11_click(self):
-        self.pumpbtn_change(self.btn_pump11)
-        self.show_curr_pump(self.p11)
-    def pump12_click(self):
-        self.pumpbtn_change(self.btn_pump12)
-        self.show_curr_pump(self.p12)
-
-    # Simply toggle between which of the 12 pump buttons is currently visually pushed down.
-    def pumpbtn_change(self, btn):
+    # Toggle between which of the 12 pump buttons is currently visually pushed down.
+    def pumpbtn_change(self, btn_obj, pump_obj):
         self.btn_pump1.setChecked(False)
         self.btn_pump2.setChecked(False)
         self.btn_pump3.setChecked(False)
@@ -486,7 +449,8 @@ class PumpSetup(QtWidgets.QWidget, pump_set_ui.Ui_PumpSettings):
         self.btn_pump11.setChecked(False)
         self.btn_pump12.setChecked(False)
 
-        btn.setChecked(True)
+        btn_obj.setChecked(True)
+        self.show_curr_pump(pump_obj)
 
     # Update the displayed pumps with the Pumps of the chosen pump.
     def show_curr_pump(self, pump):
@@ -669,7 +633,8 @@ class ManualPour(QtWidgets.QWidget, manual_pour.Ui_ManualPour):
                     ingredient = liquor[0].title()
                     amount = liquor[1].value()
                     Prep.ingredients.append([ingredient, amount])
-            Prep.serve_clicked()
+            threading.Thread(target=Prep.serve).start()
+            # Prep.serve_clicked()
             missing_window.hide()
 
 
@@ -680,7 +645,7 @@ if __name__ == "__main__":
 
     Main_Window = MainWindow()
     drink_list = DrinksList()
-    Main_Window.show()
+    Main_Window.showFullScreen()
 
     Prep = PrepWindow()
     Pumps = PumpSetup()
