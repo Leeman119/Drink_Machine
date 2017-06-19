@@ -1,6 +1,6 @@
 import time
 
-from Adafruit_MotorHAT.Adafruit_PWM_Servo_Driver import PWM
+from Adafruit_MotorHAT.DUMMY_Adafruit_PWM_Servo_Driver import PWM
 
 
 class Adafruit_StepperMotor:

@@ -16,11 +16,14 @@ def get_i2c_device(address, i2c, i2c_bus):
     if i2c is not None:
         return i2c.get_i2c_device(address)
     else:
-        import Adafruit_GPIO.I2C as I2C
-        if i2c_bus is None:
-            return I2C.get_i2c_device(address)
-        else:
-            return I2C.get_i2c_device(address, busnum=i2c_bus)
+        pass
+        # print(''' Skipped the following code: \n\n
+        # import Adafruit_GPIO.I2C as I2C
+        # if i2c_bus is None:
+        #     return I2C.get_i2c_device(address)
+        # else:
+        #     return I2C.get_i2c_device(address, busnum=i2c_bus)
+        # ''')
 
 
 class PWM(object):
@@ -57,13 +60,15 @@ class PWM(object):
         self.i2c = get_i2c_device(address, i2c, i2c_bus)
         logger.debug("Reseting PCA9685 MODE1 (without SLEEP) and MODE2")
         self.setAllPWM(0, 0)
-        self.i2c.write8(self.__MODE2, self.__OUTDRV)
-        self.i2c.write8(self.__MODE1, self.__ALLCALL)
-        time.sleep(0.005)                             # wait for oscillator
-        mode1 = self.i2c.readU8(self.__MODE1)
-        mode1 = mode1 & ~self.__SLEEP                 # wake up (reset sleep)
-        self.i2c.write8(self.__MODE1, mode1)
-        time.sleep(0.005)                             # wait for oscillator
+        # print(''' Skipped the following code:\n\n
+        # self.i2c.write8(self.__MODE2, self.__OUTDRV)
+        # self.i2c.write8(self.__MODE1, self.__ALLCALL)
+        # time.sleep(0.005)                             # wait for oscillator
+        # mode1 = self.i2c.readU8(self.__MODE1)
+        # mode1 = mode1 & ~self.__SLEEP                 # wake up (reset sleep)
+        # self.i2c.write8(self.__MODE1, mode1)
+        # time.sleep(0.005)                             # wait for oscillator
+        # ''')
 
     def setPWMFreq(self, freq):
         "Sets the PWM frequency"
@@ -75,24 +80,34 @@ class PWM(object):
         logger.debug("Estimated pre-scale: %d" % prescaleval)
         prescale = math.floor(prescaleval + 0.5)
         logger.debug("Final pre-scale: %d" % prescale)
-        oldmode = self.i2c.readU8(self.__MODE1);
-        newmode = (oldmode & 0x7F) | 0x10             # sleep
-        self.i2c.write8(self.__MODE1, newmode)        # go to sleep
-        self.i2c.write8(self.__PRESCALE, int(math.floor(prescale)))
-        self.i2c.write8(self.__MODE1, oldmode)
-        time.sleep(0.005)
-        self.i2c.write8(self.__MODE1, oldmode | 0x80)
+        # print(''' Skipped the following code:\n\n
+        # oldmode = self.i2c.readU8(self.__MODE1);
+        # newmode = (oldmode & 0x7F) | 0x10             # sleep
+        # self.i2c.write8(self.__MODE1, newmode)        # go to sleep
+        # self.i2c.write8(self.__PRESCALE, int(math.floor(prescale)))
+        # self.i2c.write8(self.__MODE1, oldmode)
+        # time.sleep(0.005)
+        # self.i2c.write8(self.__MODE1, oldmode | 0x80)
+        # ''')
 
     def setPWM(self, channel, on, off):
         "Sets a single PWM channel"
-        self.i2c.write8(self.__LED0_ON_L+4*channel, on & 0xFF)
-        self.i2c.write8(self.__LED0_ON_H+4*channel, on >> 8)
-        self.i2c.write8(self.__LED0_OFF_L+4*channel, off & 0xFF)
-        self.i2c.write8(self.__LED0_OFF_H+4*channel, off >> 8)
+        pass
+        # print(''' Skipped the following code:\n\n
+        # def setPWM(self, channel, on, off):
+        #     self.i2c.write8(self.__LED0_ON_L+4*channel, on & 0xFF)
+        #     self.i2c.write8(self.__LED0_ON_H+4*channel, on >> 8)
+        #     self.i2c.write8(self.__LED0_OFF_L+4*channel, off & 0xFF)
+        #     self.i2c.write8(self.__LED0_OFF_H+4*channel, off >> 8)
+        # ''')
 
     def setAllPWM(self, on, off):
         "Sets a all PWM channels"
-        self.i2c.write8(self.__ALL_LED_ON_L, on & 0xFF)
-        self.i2c.write8(self.__ALL_LED_ON_H, on >> 8)
-        self.i2c.write8(self.__ALL_LED_OFF_L, off & 0xFF)
-        self.i2c.write8(self.__ALL_LED_OFF_H, off >> 8)
+        pass
+        # print(''' Skipped the following code: \n\n
+        # def setAllPWM(self, on, off):
+        #     self.i2c.write8(self.__ALL_LED_ON_L, on & 0xFF)
+        #     self.i2c.write8(self.__ALL_LED_ON_H, on >> 8)
+        #     self.i2c.write8(self.__ALL_LED_OFF_L, off & 0xFF)
+        #     self.i2c.write8(self.__ALL_LED_OFF_H, off >> 8)
+        # ''')

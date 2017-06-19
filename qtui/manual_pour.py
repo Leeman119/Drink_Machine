@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'manual_pour.ui'
 #
-# Created by: PyQt5 UI code generator 5.8.1
+# Created by: PyQt5 UI code generator 5.7.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_ManualPour(object):
     def setupUi(self, ManualPour):
         ManualPour.setObjectName("ManualPour")
-        ManualPour.resize(775, 378)
+        ManualPour.resize(800, 480)
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout(ManualPour)
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
         self.gridLayout = QtWidgets.QGridLayout()

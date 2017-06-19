@@ -5,6 +5,8 @@ import sys
 import time
 import threading
 
+testing = True
+
 hat1 = Adafruit_MotorHAT(addr=0x61)
 hat2 = Adafruit_MotorHAT(addr=0x71)
 hat3 = Adafruit_MotorHAT(addr=0x69)
@@ -27,27 +29,39 @@ class Pumps(Adafruit_MotorHAT):
     def pour(self, amount):
         self.pump.setSpeed(self.speed)
         if self.reverse_pump == 'True':
-            print 'Pouring ' + str(self.booze)
-            self.pump.run(Adafruit_MotorHAT.BACKWARD)
+            # print 'Pouring ' + str(self.booze)
+            print('Pouring ' + str(self.booze))
+            if testing is not True:
+                self.pump.run(Adafruit_MotorHAT.BACKWARD)
         else:
-            print 'Pouring ' + str(self.booze)
-            self.pump.run(Adafruit_MotorHAT.FORWARD)
+            # print 'Pouring ' + str(self.booze)
+            print('Pouring ' + str(self.booze))
+            if testing is not True:
+                self.pump.run(Adafruit_MotorHAT.FORWARD)
         time.sleep(self.oneoz_timing * amount)
-        print 'Stopping ' + str(self.booze)
-        self.pump.run(Adafruit_MotorHAT.RELEASE)
+        # print 'Stopping ' + str(self.booze)
+        print('Stopping ' + str(self.booze))
+        if testing is not True:
+            self.pump.run(Adafruit_MotorHAT.RELEASE)
 
     def start(self):
         self.pump.setSpeed(self.speed)
         if self.reverse_pump == 'True':
-            print 'Pouring ' + str(self.booze)
-            self.pump.run(Adafruit_MotorHAT.BACKWARD)
+            # print 'Pouring ' + str(self.booze)
+            print('Pouring ' + str(self.booze))
+            if testing is not True:
+                self.pump.run(Adafruit_MotorHAT.BACKWARD)
         else:
-            print 'Pouring ' + str(self.booze)
-            self.pump.run(Adafruit_MotorHAT.FORWARD)
+            # print 'Pouring ' + str(self.booze)
+            print('Pouring ' + str(self.booze))
+            if testing is not True:
+                self.pump.run(Adafruit_MotorHAT.FORWARD)
 
     def stop(self):
-        print 'Stopping ' + str(self.booze)
-        self.pump.run(Adafruit_MotorHAT.RELEASE)
+        # print 'Stopping ' + str(self.booze)
+        print('Stopping ' + str(self.booze))
+        if testing is not True:
+            self.pump.run(Adafruit_MotorHAT.RELEASE)
 
     
     

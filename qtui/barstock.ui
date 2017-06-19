@@ -1,0 +1,1992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BarStock</class>
+ <widget class="QWidget" name="BarStock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="barstock">
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>16</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::ElideNone</enum>
+     </property>
+     <property name="movable">
+      <bool>false</bool>
+     </property>
+     <property name="tabBarAutoHide">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="spirits_tab">
+      <attribute name="title">
+       <string>             Spirits             </string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QScrollArea" name="scrollArea">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>739</width>
+            <height>1340</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="8" column="0">
+            <widget class="QLabel" name="label_21">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Sherry</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
+            <widget class="QLabel" name="label_22">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Vermouth, Sweet</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="2">
+            <widget class="QLabel" name="label_24">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Tequila</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="1">
+            <widget class="QLabel" name="label_26">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Vodka</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="3">
+            <widget class="QLabel" name="label_25">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Vermouth, Dry</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="2">
+            <widget class="QLabel" name="label_27">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Vodka, Citrus</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="3">
+            <widget class="QLabel" name="label_28">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Whiskey, Canadian</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QLabel" name="label_23">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Southern Comfort</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_10">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Brandy</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QLabel" name="label_5">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Bourbon</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_12">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Angostura</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2">
+            <widget class="QLabel" name="label">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Goldschlager</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLabel" name="label_9">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Rum, Gold</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_15">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Beer</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_13">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Beer, Stout</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="3">
+            <widget class="QLabel" name="label_8">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Rum, White</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Champagne</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="2">
+            <widget class="QLabel" name="label_7">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Rum, Overproof</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Rum, Dark</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLabel" name="label_17">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Cachaça</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="3">
+            <widget class="QLabel" name="label_20">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Schnapps, Peppermint</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="3">
+            <widget class="QLabel" name="label_14">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Rum, Coconut</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="label_6">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Gin</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QLabel" name="label_2">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Campari</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QLabel" name="label_16">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Schnapps, Butterscotch</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="2">
+            <widget class="QLabel" name="label_19">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Schnapps, Peach</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_18">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Brandy, Cherry</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_11">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Schnapps, Apple</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0">
+            <widget class="QLabel" name="label_29">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Whiskey, Irish</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="1">
+            <widget class="QLabel" name="label_30">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Whiskey, Scotch</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="liqueur_tab">
+      <attribute name="title">
+       <string>            Liqueur            </string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QScrollArea" name="scrollArea_2">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>739</width>
+            <height>1008</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="8" column="0">
+            <widget class="QLabel" name="label_31">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Sambuca</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="2">
+            <widget class="QLabel" name="label_33">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Strawberry Liqueur</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="3">
+            <widget class="QLabel" name="label_35">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Triple Sec</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QLabel" name="label_38">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Sloe Gin</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_39">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Chartreuse</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_41">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Amaretto</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2">
+            <widget class="QLabel" name="label_42">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Curacao, Blue</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLabel" name="label_43">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Grand Marnier</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QLabel" name="label_40">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Blackcurrant Liqueur</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_44">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Banana Liqueur</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QLabel" name="label_54">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Cointreau</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="2">
+            <widget class="QLabel" name="label_48">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Hazelnut Liqueur</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_47">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Creme de Cacao, Dark</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QLabel" name="label_55">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Jägermeister</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="3">
+            <widget class="QLabel" name="label_51">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Mint Liqueur</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_49">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Galliano</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="3">
+            <widget class="QLabel" name="label_46">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Irish Cream</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_57">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Coconut Liqueur</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="2">
+            <widget class="QLabel" name="label_56">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Midori</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="label_53">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Creme de Cacao, White</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="3">
+            <widget class="QLabel" name="label_52">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Curacao, Orange</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_58">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Irish Mist</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_45">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Black Raspberry</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLabel" name="label_50">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Coffee Liqueur</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="mixers_tab">
+      <attribute name="title">
+       <string>            Mixers            </string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QScrollArea" name="scrollArea_3">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>-936</y>
+            <width>739</width>
+            <height>1340</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="8" column="0">
+            <widget class="QLabel" name="label_61">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Juice, Tomato</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
+            <widget class="QLabel" name="label_62">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Simple Syrup</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="2">
+            <widget class="QLabel" name="label_63">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Mint Leaves</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="1">
+            <widget class="QLabel" name="label_64">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Sprite</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="3">
+            <widget class="QLabel" name="label_65">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Orgeat Syrup</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="2">
+            <widget class="QLabel" name="label_66">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Strawberries</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="3">
+            <widget class="QLabel" name="label_67">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Tabasco Sauce</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QLabel" name="label_68">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Milk</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_69">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Cream</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QLabel" name="label_70">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Cola</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_71">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>7 Up</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2">
+            <widget class="QLabel" name="label_72">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Hot Chocolate</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLabel" name="label_73">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Juice, Cranberry</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_74">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Club Soda</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_75">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Coffee</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="3">
+            <widget class="QLabel" name="label_76">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Juice, Lemon</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_77">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Grenadine</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="2">
+            <widget class="QLabel" name="label_78">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Juice, Grapefruit</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_79">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Juice, Apple</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLabel" name="label_80">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Energy Drink</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="3">
+            <widget class="QLabel" name="label_81">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Juice, Pineapple</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="3">
+            <widget class="QLabel" name="label_82">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Ice Cream</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="label_83">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Half &amp; Half</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QLabel" name="label_84">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Ginger Ale</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QLabel" name="label_85">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Juice, Orange</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="2">
+            <widget class="QLabel" name="label_86">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Juice, Peach</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_87">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Eggnog</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_88">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Juice, Lime</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0">
+            <widget class="QLabel" name="label_89">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Tonic</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="1">
+            <widget class="QLabel" name="label_90">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>125</width>
+               <height>160</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Worcestershire</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

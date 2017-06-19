@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'pouring.ui'
 #
-# Created by: PyQt5 UI code generator 5.8.1
+# Created by: PyQt5 UI code generator 5.7.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_PourWindow(object):
     def setupUi(self, PourWindow):
         PourWindow.setObjectName("PourWindow")
-        PourWindow.resize(766, 392)
+        PourWindow.resize(800, 480)
         font = QtGui.QFont()
         font.setPointSize(11)
         PourWindow.setFont(font)
@@ -81,7 +81,7 @@ class Ui_PourWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 523, 113))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 557, 201))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
@@ -113,7 +113,7 @@ class Ui_PourWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 173, 114))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 173, 202))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
@@ -161,7 +161,7 @@ class Ui_PourWindow(object):
 
     def retranslateUi(self, PourWindow):
         _translate = QtCore.QCoreApplication.translate
-        PourWindow.setWindowTitle(_translate("PourWindow", "Prep..."))
+        PourWindow.setWindowTitle(_translate("PourWindow", "Pouring..."))
         self.dsp_name.setText(_translate("PourWindow", "Display drink name here."))
         self.label_3.setText(_translate("PourWindow", "Serving size:"))
         self.btn_more.setText(_translate("PourWindow", "More"))

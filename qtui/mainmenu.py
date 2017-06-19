@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'mainmenu.ui'
 #
-# Created by: PyQt5 UI code generator 5.8.1
+# Created by: PyQt5 UI code generator 5.7.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -11,10 +11,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainMenu(object):
     def setupUi(self, MainMenu):
         MainMenu.setObjectName("MainMenu")
-        MainMenu.resize(760, 345)
+        MainMenu.resize(800, 480)
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("../images/icons/Bronx.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainMenu.setWindowIcon(icon)
+        MainMenu.setAutoFillBackground(False)
         self.centralwidget = QtWidgets.QWidget(MainMenu)
         self.centralwidget.setObjectName("centralwidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.centralwidget)

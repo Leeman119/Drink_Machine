@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'miss_ingredients.ui'
 #
-# Created by: PyQt5 UI code generator 5.8.1
+# Created by: PyQt5 UI code generator 5.7.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MissingIngredients(object):
     def setupUi(self, MissingIngredients):
         MissingIngredients.setObjectName("MissingIngredients")
-        MissingIngredients.resize(500, 375)
+        MissingIngredients.resize(800, 480)
         font = QtGui.QFont()
         font.setPointSize(8)
         MissingIngredients.setFont(font)
@@ -40,7 +40,7 @@ class Ui_MissingIngredients(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 215, 210))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 365, 315))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
@@ -65,7 +65,7 @@ class Ui_MissingIngredients(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 215, 210))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 365, 315))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
